@@ -1,0 +1,9 @@
+<div *ngIf="user; else loading">
+    <img [src]="user?.avatar_url" alt="User avatar" width="100" />
+    <h2>{{ user?.login }}</h2>
+    <p *ngIf="user.name">Name: {{ user?.name }}</p>
+    <p *ngIf="user.bio">Bio: {{ user?.bio }}</p>
+</div>
+<ng-template #loading>
+    <p>Loading user details...</p>
+</ng-template>

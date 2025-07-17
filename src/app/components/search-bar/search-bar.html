@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+  <label for="name">Username:</label>
+  <input type="text" id="userName" formControlName="userName">
+
+  <button type="submit">Submit</button>
+</form>
